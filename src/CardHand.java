@@ -5,26 +5,28 @@
  *  Program: ICE2: CardHand Object Class
  *  Due Date: March 7, 2021
  */
+/**
+ * This class creates your deck of cards
+ */
 public class CardHand {
-
-        private int handSize = 52;
+        //specifies the deck size
+        private int handSize = 60;
+        //initialize number of cards in deck
 	public Card[] cards = new Card[handSize];
 
-	
-        /**
-         * Add comments during class to explain what this method does.
-         */
-        public void generateHand()
-        {
-                int countCards = 0;
-		for(Card.Suit s: Card.Suit.values())
-                {
-                    for(Card.Value v: Card.Value.values())
-                    {
-                        cards[countCards] = (new Card(s,v));
-                        countCards++;
-                    }
-                }//end outter for
+        //sets card suit and values in order through for-each loop
+        public void generateHand() {
+            int countCards = 0;
+            //for-each loop
+            //loop through the number of suits
+            for(Card.Suit s: Card.Suit.values()) {
+                //loop through the number of values
+                for(Card.Value v: Card.Value.values()) {
+                    //set cards array of index countCards to s = suit, v = value
+                    cards[countCards] = (new Card(s,v));
+                    countCards++;
+                }
+            }//end outter for
         }//end method
 
 }
