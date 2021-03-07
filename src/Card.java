@@ -5,23 +5,24 @@
  *  Program: ICE2: Card Object Class
  *  Due Date: March 7, 2021
  */
+/**
+ * This class is the object of the cards
+ */
 public class Card {
-    
-        public enum Suit {HEARTS, CLUBS,SPADES,DIAMONDS};
-        public enum Value{ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
+        //create UNO card properties
+        public enum Suit {RED, YELLOW, GREEN, BLUE};
+        public enum Value{ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SKIP, REVERSE, DRAWTWO, DRAWFOUR, WILDCARD};
         private final Suit suit;
         private final Value value;
-        
-        public Card(Suit s, Value gVal)
-        {
-           suit =s;
-           value= gVal;
+        //constructor method
+        public Card(Suit s, Value gVal) {
+           suit = s;
+           value = gVal;
         }
+        //getter methods
 	public Value getValue() {
 		return this.value;
 	}
-
-	
 	public Suit getSuit() {
 		return this.suit;
         }
