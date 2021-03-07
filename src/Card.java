@@ -1,4 +1,10 @@
-
+/**
+ *  @author Thomas Wong, 991623854
+ *  Campus: Davis
+ *  Course: Syst17796 Fundamentals of Software Design and Development
+ *  Program: ICE2: Card Object Class
+ *  Due Date: March 7, 2021
+ */
 public class Card {
     
         public enum Suit {HEARTS, CLUBS,SPADES,DIAMONDS};
