@@ -13,7 +13,11 @@ public class GamePlayer {
                 ch.generateHand();
                 //loop through ch array of size ch.handSize note: handSize is private
                 //for-each loop through array
+                //card number counter
+                int cardNumber = 0;
                 for(Card c: ch.cards) {
+                    //display card number before card
+                    System.out.print(++cardNumber + ": ");
                     System.out.println(c.getValue() + " of " + c.getSuit());
                 }
 //               System.out.println(ch.cards); 
